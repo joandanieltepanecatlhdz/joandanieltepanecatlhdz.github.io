@@ -1,0 +1,180 @@
+<!--
+Facultad de arquitetura
+Colegio de Diseño Grafco
+diseño de interfaces grafica de usuario
+tepanecatl hernandez joan daniel
+matricula 202058947
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tepanecatl Hernandez Joan Daniel</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <style type="text/css">
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+
+            header, nav, main, footer {
+                width: 100%;
+                padding: 20px;
+                background-color: #441752;
+                color: #EFB6C8;
+            }
+
+            header {
+                text-align: center;
+                font-size: 2em;
+            }
+
+            header h1 {
+                font-family: "Carter One", serif;
+            }
+
+            nav {
+                height: auto;
+                background-color: #8174A0;
+            }
+
+            nav ul {
+                text-align: center;
+                padding: 0;
+            }
+
+            nav ul li {
+                width: 10%;
+                min-width: 100px;
+                height: 50px;
+                background-color: #441752;
+                display: inline-block;
+                margin: 10px;
+                list-style-type: none;
+                padding: 10px;
+            }
+
+            a {
+                text-decoration: none;
+            }
+
+            a:link {
+                color: red;
+            }
+
+            a:visited {
+                color: deeppink;
+            }
+
+            a:active {
+                color: blueviolet;
+            }
+
+            a:hover {
+                color: dodgerblue;
+            }
+
+            nav ul li:hover {
+                width: 12%;
+                background-color: blueviolet;
+            }
+
+            nav ul li a:hover {
+                color: bisque;
+            }
+
+            main {
+                height: auto;
+                background-color: #EFB6C8;
+                color: #8174A0;
+                padding: 10px;
+            }
+
+            footer {
+                text-align: center;
+                font-size: 1.5em;
+            }
+
+            section {
+                width: 70%;
+                height: auto;
+                background-color: #A888B5;
+                margin: 0 auto 30px;
+                padding: 20px;
+                color: #EFB6C8;
+            }
+
+            p {
+                margin-top: 20px;
+            }
+
+            h2 {
+                color: #441752;
+            }
+            
+#home-icon {
+    position: absolute; 
+    top: 120px; 
+    left: 20px; 
+    float: right;
+}
+
+
+#home-icon img {   width: 80px; 
+    height: auto;
+    }
+ 
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>FORMATOS DE TEXTO HTML</h1>
+            <a href="../index.html" id="home-icon">
+        <img src=  "../images/home.png" alt="index" width="80" height="80">
+    </a>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="../html/formatostexto.html">Formatos</a></li>
+                <li><a href="../html/listas.html">Listas</a></li>
+                <li><a href="../html/enlaces.html">Enlaces</a></li>
+                <li><a href="../html/Tablas.html">Tablas</a></li>
+                <li><a href="../html/imgenes.html">Imagenes</a></li>
+                <li><a href="../html/audio.html">Audio</a></li>
+                <li><a href="../html/video.html">Video</a></li>
+                <li><a href="../html/formularios.html">Formularios</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section>
+                <h1>Encabezado h1</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus scelerisque eros lorem, in scelerisque odio ultrices vel. Nullam in porta lectus. Mauris tristique purus felis, a dictum turpis fermentum eu. <b>Ut turpis enim, porta et cursus sit amet, sollicitudin et arcu. Phasellus non consectetur urna, feugiat tristique dui.</b> Duis pulvinar turpis commodo orci pulvinar, vel rhoncus urna pharetra. In at varius neque. Nam id arcu et nunc mattis eleifend et et risus. Nunc bibendum massa ut aliquet sollicitudin. Praesent placerat diam ante, eu mollis dui convallis et. Nunc ligula quam, elementum ut tempus sit amet, consectetur ut lorem. Praesent posuere.</p>
+            </section>
+            <section>
+                <h2>Encabezado h2</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus scelerisque eros lorem, in scelerisque odio ultrices vel. Nullam in porta lectus. Mauris tristique purus felis, a dictum turpis fermentum eu. Ut turpis enim, porta et cursus sit amet, sollicitudin et arcu. Phasellus non consectetur urna, feugiat tristique dui. <i>Duis pulvinar turpis commodo orci pulvinar, vel rhoncus urna pharetra. In at varius neque. Nam id arcu et nunc mattis eleifend et et risus. Nunc bibendum massa ut aliquet sollicitudin. Praesent placerat diam ante, eu mollis dui convallis et. Nunc ligula quam, elementum ut tempus sit amet, consectetur ut lorem.</i> Praesent posuere.</p>
+            </section>
+            <section>
+                <h3>Encabezado h3</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus scelerisque eros lorem, in scelerisque odio ultrices vel. <del>Nullam in porta lectus. Mauris tristique purus felis, a dictum turpis fermentum eu. Ut turpis enim, porta et cursus sit amet, sollicitudin et arcu. Phasellus non consectetur urna, feugiat tristique dui.</del> Duis pulvinar turpis commodo orci pulvinar, vel rhoncus urna pharetra. In at varius neque. Nam id arcu et nunc mattis eleifend et et risus. Nunc bibendum massa ut aliquet sollicitudin. Praesent placerat diam ante, eu mollis dui convallis et. Nunc ligula quam, elementum ut tempus sit amet, consectetur ut lorem. Praesent posuere.</p>
+            </section>
+            <section>
+                <h4>Encabezado h4</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus scelerisque eros lorem, in scelerisque odio ultrices vel. Nullam in porta lectus. Mauris tristique purus felis, a dictum turpis fermentum eu. <mark>Ut turpis enim, porta et cursus sit amet, sollicitudin et arcu. Phasellus non consectetur urna, feugiat tristique dui. Duis pulvinar turpis commodo orci pulvinar, vel rhoncus urna pharetra. In at varius neque. Nam id arcu et nunc mattis eleifend et et risus. Nunc bibendum massa ut aliquet sollicitudin.</mark> Praesent placerat diam ante, eu mollis dui convallis et. Nunc ligula quam, elementum ut tempus sit amet, consectetur ut lorem. Praesent posuere.</p>
+            </section>
+            <section>
+                <h5>Encabezado h5</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus scelerisque eros lorem, in scelerisque odio ultrices vel. Nullam in porta lectus. Mauris tristique purus felis, a dictum turpis fermentum eu. <b><mark> H<sub>2</sub>O</mark></b>Ut turpis enim, porta et cursus sit amet, sollicitudin et arcu. Phasellus non consectetur urna, feugiat tristique dui. Duis pulvinar turpis commodo orci pulvinar, vel rhoncus urna pharetra. In at varius neque. Nam id arcu et nunc mattis eleifend et et risus. Nunc bibendum massa ut aliquet sollicitudin. Praesent placerat diam ante, eu mollis dui convallis et. Nunc ligula quam, elementum ut tempus sit amet, consectetur ut lorem. Praesent posuere.</p>
+            </section>
+            <section>
+                <h6>Encabezado h6</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus scelerisque eros lorem, in scelerisque odio ultrices vel. Nullam in porta lectus.<b><mark>h<sup>2</sup>=c<sup>2</sup>+c<sup>2</sup></mark></b> Mauris tristique purus felis, a dictum turpis fermentum eu. Ut turpis enim, porta et cursus sit amet, sollicitudin et arcu. Phasellus non consectetur urna, feugiat tristique dui. Duis pulvinar turpis commodo orci pulvinar, vel rhoncus urna pharetra. In at varius neque. Nam id arcu et nunc mattis eleifend et et risus. Nunc bibendum massa ut aliquet sollicitudin. Praesent placerat diam ante, eu mollis dui convallis et. Nunc ligula quam, elementum ut tempus sit amet, consectetur ut lorem. Praesent posuere.</p>
+            </section>
+        </main>
+        <footer>
+            <h5> Tepanecatl Hernandez Joan Daniel</h5>
+        </footer>
+    </body>
+</html>

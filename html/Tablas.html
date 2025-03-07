@@ -1,0 +1,575 @@
+<!--
+Facultad de arquitetura
+Colegio de Diseño Grafco
+diseño de interfaces grafica de usuario
+tepanecatl hernandez joan daniel
+matricula 202058947
+-->
+
+<!DOCTYPE html>
+<!DOCTYPE html>
+
+<html>
+ <head>
+        <title>Tablas</title>
+     <a href="../index.html" id="home-icon">
+        <img src=  "../images/home.png" alt="index" width="80" height="80">
+    </a>
+     
+          
+   <link rel="stylesheet"
+ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+     
+     
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style type="text/css">
+    *{
+        padding:0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    header,nav,main,footer {
+        width: 100%;
+        padding: 30px;
+        color: #EFB6C8; 
+    }
+    
+    header{
+        height: 100px;
+        background-color: #441752;
+    }
+
+    nav{
+        height: auto;
+        background-color: #8174A0; 
+    }
+    
+    main{
+        height: auto;
+        background-color: #EFB6C8;
+    }
+    
+    footer{
+        height: 60px;
+        background-color: #441752; 
+    }
+    
+    section{
+        width: 70%;
+        height: auto;
+        background-color: #A888B5; 
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+        color: #EFB6C8; 
+        padding: 30px;
+        overflow-x: auto;
+    }
+
+    h2{
+        margin: 20px;
+        color: #441752; 
+    }
+
+  
+    nav ul{
+        text-align: center;
+    }
+        nav ul li a:hover {
+    color: bisque;
+}
+
+    
+    nav ul li{
+        width: 10%;
+        background-color: #441752; 
+        margin: 10px;
+        list-style-type: none;
+        padding: 10px;
+        display: inline-block;
+        transition: all 0.3s;
+    }
+
+    nav ul li:hover {
+        background-color: blueviolet; 
+    }
+
+    /* Enlaces */
+    a{
+        text-decoration: none;
+    }
+
+    a:link{
+        color: #EFB6C8; 
+    }
+
+    a:visited{
+        color: deeppink;
+    }
+
+    a:hover{
+        color:  blueviolet; 
+    }
+
+    /* Tablas */
+    table{
+        background-color: #8174A0; 
+    }
+
+    #tab_buap th{
+        background-color: #441752; 
+        color: #EFB6C8; 
+    }
+
+    #tab_buap td{
+        background-color: #EFB6C8; 
+        color: #441752; 
+    }
+
+    #tab_libros th{
+        background-color: #441752; 
+        color: #EFB6C8; 
+    }
+
+    #tab_libros tbody tr:nth-child(even){
+        background-color: #A888B5; 
+        color: #EFB6C8; 
+    }
+
+    #tab_libros tbody tr:nth-child(odd){
+        background-color: #EFB6C8; 
+        color: #441752; 
+    }
+
+    #tab_libros tfoot tr{
+        background-color: #8174A0; 
+        color: #441752; 
+    }
+
+    #tab_pelis{
+        background-color: #A888B5; 
+    }
+
+    #tab_pelis th{
+        background-color: #441752; 
+        color: #EFB6C8; 
+    }
+
+    #tab_series th{
+        background-color: #441752; 
+        color: #EFB6C8; 
+    }
+
+  
+    #tab_pelis tbody td:hover{
+        background-color: #D32F2F; 
+        color: white;
+    }
+        header h1{text-align: center;}
+        
+#home-icon {
+    position: absolute; 
+    top: 110px; 
+    left: 20px;
+    float: right;
+}
+
+
+#home-icon img {   width: 80px; 
+    height: auto;
+    }
+ 
+</style>
+     
+     
+     
+     
+     
+     </head>
+    
+    <body>
+        
+       <header>
+           <h1 class="animate_animated animete__pulse animate-3s">TABLAS</h1></header>
+   <nav>
+      <ul>
+             
+        <li><a href="../html/formatostexto.html">Formatos</a></li>
+        <li><a href="../html/listas.html">Listas</a></li>
+        <li><a href="../html/enlaces.html">Enlaces</a></li>
+        <li><a href="../html/Tablas.html">Tablas</a></li>
+        <li><a href="../html/imgenes.html">Imagenes</a></li>
+        <li><a href="../html/audio.html">Audio</a></li>
+         <li><a href="../html/video.html">Video</a></li>
+        <li><a href="../html/formularios.html">Formularios</a></li>
+        
+       </ul>  
+         </nav>
+        
+        
+        <main>
+        <section>
+            <h1>Tabla Simple </h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nunc ligula, bibendum tempor pharetra id, finibus eget ex. Mauris placerat justo quis leo consequat dignissim. Praesent finibus sed lectus id pharetra. Curabitur elementum sapien ornare leo congue porta. Donec maximus tincidunt risus a imperdiet. Mauris eu finibus lorem. Nam in ante vitae arcu euismod vehicula. Aenean posuere sodales sem, et feugiat nulla efficitur in. Nullam ut turpis maximus, finibus arcu in, feugiat ex. Vivamus venenatis ut lectus et rhoncus. Nulla lacinia lectus ut est vestibulum vulputate. Nullam turpis velit, lobortis vel felis ut, fermentum egestas leo. Nunc dui ex, fermentum.</p>
+            
+            <table id="tab_buap" border="1">
+            
+            <thead>
+                <tr>
+                <th>Matricula</th>
+                <th>Nombre</th>
+                <th>Faculta</th>
+                <th>Celular</th>
+                <th>E-mail</th>
+                </tr>
+                </thead>
+                
+                <tbody>
+                    <tr>
+                    <td>2020258696</td>
+                    <td> Maria Jose Rojas Perez</td>
+                    <td>contaduria</td>
+                    <td>2222313121</td>
+                    <td>mryrojas@gmail.com</td>
+                    </tr>
+                           <tr>
+                    <td>2020283833</td>
+                    <td>roberto salamon cruz</td>
+                    <td>ingieneria antomotriz</td>
+                    <td>2211242364</td>
+                    <td>slomon37@gmail.com</td>
+                    </tr>
+                           <tr>
+                    <td>202025048443</td>
+                    <td>susana cruz aguilar</td>
+                    <td>arquiterura</td>
+                    <td>22210293843</td>
+                    <td>susan@gmail.com</td>
+                    </tr>
+                           <tr>
+                    <td>2020258965</td>
+                    <td>jaziel naim hernandez</td>
+                    <td>contaduria</td>
+                    <td>2211278673</td>
+                    <td>jaziel45@gmaiol.com/td>
+                           </tr>
+                           <tr>
+                    <td>2211234231</td>
+                    <td>karla zarate bravo</td>
+                    <td>arquitectura</td>
+                    <td>22232431211</td>
+                    <td>karla34@gmail.com</td>
+                    </tr>
+                           <tr>
+                    <td>2020267854</td>
+                    <td>rene oscar bravo</td>
+                    <td>biologia</td>
+                    <td>2223146657</td>
+                    <td>oscarrene@gmail.com</td>
+                    </tr>
+                    
+                </tbody>
+                  <tfoot>
+                </tfoot>
+            
+            </table>
+            
+            
+            
+            
+            
+            </section>
+            
+            
+            <section>
+            <h1>Tabla Cebra</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget facilisis nulla. Aliquam sagittis ante sed massa consectetur, quis hendrerit enim interdum. Morbi ut placerat purus. Sed nec pulvinar nisl. Ut ac consectetur purus. Curabitur faucibus accumsan lectus, at luctus urna vehicula id. Mauris scelerisque tellus quis nisl tristique, id volutpat diam ornare. Nunc imperdiet varius diam, at sollicitudin nisi semper nec. Pellentesque sollicitudin sapien at pulvinar molestie. Quisque dapibus venenatis tortor eget malesuada. Mauris risus mi, blandit in metus.</p>
+               
+                <table id="tab_libros" border="1">
+                <thead>
+                     <tr>
+                <th>Titulo</th>
+                <th>Autor</th>
+                <th>Editorial</th>
+                <th>Añor</th>
+                <th>Precio</th>
+                </tr>
+                    </thead>
+                    
+                    <tbody>
+                    
+                    <tr>
+                    <td>Cronica de una muerte anunciada</td>
+                    <td> Gariel Garcia Marquez</td>
+                    <td></td>La Oveja Negra
+                    <td></td> 1981
+                    <td>250.99</td>
+                    </tr>
+                           <tr>
+                    <td>Momo</td>
+                    <td>Michael Ende</td>
+                    <td>Alfaguara</td>
+                    <td> 1973</td>
+                    <td>200.00</td>
+                    </tr>
+                           <tr>
+                    <td>Divergente</td>
+                    <td>Veronica Rothr</td>
+                    <td>Molino</td>
+                    <td>2011</td>
+                    <td>60.00</td>
+                    </tr>
+                           <tr>
+                    <td>El diario de Greg</td>
+                    <td>Jeff Kiney</td>
+                    <td> Editorial Océano Travesía </td>
+                    <td> 2004</td>
+                    <td>350.00</td>
+                           </tr>
+                           <tr>
+                    <td>Entre las armas y la palabra</td>
+                    <td>maria sans</td>
+                    <td>OCÉANO</td>
+                    <td>2011</td>
+                    <td>280.00</td>
+                    </tr>
+                           <tr>
+                    <td>Alicia en el pais de la maravillas/td>
+                    <td>Lewis Carrol</td>
+                    <td>Macmillan Publishers</td>
+                    <td>Macmillan Publishers</td>
+                    <td>200.oo</td>
+                    </tr>
+                    
+                    </tbody>
+                 <tfoot>
+                    <tr>
+                        <td></td>
+                         <td></td>
+                         <td></td>
+                     <td>total</td>
+                        <td>1340.99</td>
+                     </tr>
+                    
+                    
+                    </tfoot>
+                
+                
+                
+                </table>
+                
+            </section>
+            
+            <section>
+            <h1>tabla Hover</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean auctor condimentum viverra. Donec sodales imperdiet luctus. Nulla quis condimentum est, nec pulvinar orci. Pellentesque non ultrices dolor. Proin in nulla odio. Quisque ultrices luctus nisl, sit amet malesuada ipsum tempus vitae. Ut nisi nisi, iaculis ac maximus eget, tristique et neque. Nunc tincidunt lectus fermentum, placerat sem nec, sollicitudin nulla.</p>
+                 <table id=tab_pelis>
+                <thead>
+                     <tr>
+                <th>Titulo</th>
+                <th>director</th>
+                <th>genero</th>
+                <th>Añor</th>
+                <th>recaudacion</th>
+                </tr>
+                    </thead>
+                    
+                    <tbody>
+                    
+                    <tr>
+                    <td>Transformers Uno</td>
+                    <td>Josh Cooley</td>
+                    <td> animación </td>
+                    <td>2024</td>
+                    <td>129,4 millones UDS</td>
+                    </tr>
+                           <tr>
+                    <td>Saw</td>
+                    <td>James Wan</td>
+                    <td>Terror</td>
+                    <td>2004 </td>
+                    <td>104 millones. UDS</td>
+                    </tr>
+                           <tr>
+                    <td>Avatar </td>
+                    <td>James Cameron</td>
+                    <td>Ciencia ficción</td>
+                    <td>2009</td>
+                    <td> 2.923 millones USD</td>
+                    </tr>
+                           <tr>
+                    <td>Shrek</td>
+                    <td>Andrew Adamson</td>
+                    <td>Comedia</td>
+                    <td>2001</td>
+                    <td>$488351320 USD</td>
+                           </tr>
+                           <tr>
+                    <td>Black Panther</td>
+                    <td>Ryan Coogler</td>
+                    <td>Cine de superhéroes</td>
+                    <td>2018</td>
+                    <td>859 millones USD</td>
+                    </tr>
+                           <tr>
+                    <td>El escuadrón suicida</td>
+                    <td>James Gunn</td>
+                    <td>Superhéroes</td>
+                    <td>2021</td>
+                    <td>$168717425 USD</td>
+                    </tr>
+                    
+                    </tbody>
+                     
+                 <tfoot>
+                    <tr>
+                        <td></td>
+                         <td></td>
+                         <td></td>
+                     <td>total</td>
+                        <td>MUHO DINERO</td>
+                     </tr>
+                    
+                    
+                    </tfoot>
+                
+                
+                
+                </table>
+                
+                
+                
+            </section>
+        
+        <section style=" overflow-x: auto">
+            <h2>Tabla overflow x</h2>
+            <p> 
+ 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et elementum orci. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec scelerisque magna vitae consequat imperdiet. Pellentesque ultrices eget nisi ut pharetra. Maecenas hendrerit nulla in porta egestas. Phasellus id ex condimentum, semper urna at, tempus nisi. Maecenas vestibulum odio sit amet varius consectetur. Suspendisse metus ex, convallis quis vestibulum ut, consequat at nisl. Praesent enim eros, pulvinar sed malesuada eget, maximus id nunc. Nullam lobortis eu dolor et ultrices. Mauris eleifend mattis nibh. Mauris quis arcu arcu. Nulla dui odio, sodales eget risus nec, dapibus.</p>
+            
+         
+            <table id= tab_series>
+                
+            <thead>
+             <tr>
+                 <th>Serie </th>
+                 <th>Año </th>
+                 <th> Genero</th>
+                 <th colspan="2">Creador </th>
+                 <th colspan="2">Pais de origen </th>
+                 <th>Temporadas </th>
+                 
+                
+                
+                </tr>
+                
+                
+                </thead>
+           <tbody>
+               <tr>
+               <td> House of cards</td>
+                 <td>Policial</td>
+                 <td>2013</td>
+                 <td>Beau willion</td>
+                   <td></td>
+                 <td> Estados nidos </td>
+                    <td></td>
+                 <td>6</td>
+                </tr>
+             
+              <tr>
+               <td>Hora de aventur</td>
+                 <td>Fantasia</td>
+                 <td>2018</td>
+                 <td> Pendleton Ward</td>
+                   <td></td>
+                 <td> Estados Unidos</td>
+                 <td>suecia</td>
+                  <td>10</td>
+                </tr>
+              <tr>
+               <td>Doctor house</td>
+                 <td>Drama Medico</td>
+                 <td>2004</td>
+                 <td>David Shore</td>
+                   <td></td>
+                 <td>Estados Unidos</td>
+                   <td></td>
+                 <td>8</td>
+                </tr>
+              <tr>
+               <td>Belleza Veradera </td>
+                 <td>Romance</td>
+                 <td>2020</td>
+                 <td>Kim Sang-hyup</td>
+                   <td></td>
+                 <td>Corea del Sur</td>
+                   <td></td>
+                 <td>1</td>
+                </tr>
+              <tr>
+               <td>Shōgun</td>
+                 <td>Drama Historico</td>
+                 <td>2024</td>
+                 <td>Justing Marks</td>
+                 <td>Rchel Kondo</td>
+                 <td>japon</td>
+                   <td></td>
+                  <td>1</td>
+                </tr>
+              <tr>
+               <td>Club de Cuervos</td>
+                 <td>Comedia Dramatica</td>
+                 <td>2015</td>
+                 <td>Michael Lam</td>
+                 <td>Gaz Alazraki</td>
+                 <td>Mexico</td>
+                   <td></td>
+                  <td>4</td>
+                </tr>
+             
+             
+             
+             </tbody>
+             
+             
+             
+             
+                 <tfoot>
+                    <tr>
+                     
+                     </tr>
+                    
+                    
+                    </tfoot>
+                
+            
+            
+            
+            
+            
+            
+            </table>
+            
+            
+            
+            
+            
+            </section>
+        
+        
+        
+        
+        </main>
+
+<footer>
+    <h6>Elaborado por Tepanecatl Hernadez Joan Daniel</h6>
+</footer>
+ </body>
+
+
+</html>

@@ -1,0 +1,302 @@
+/*
+Facultad de Arquitectura
+Colegio de Diseño Gráfico
+Diseño de Interfaces Gráficas de Usuario
+Tepanecatl Hernández Joan Daniel
+Matrícula 202058947
+*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header, nav, main, footer {
+    width: 100%;
+    padding: 20px;
+    background-color: #441752;
+    color: #EFB6C8;
+}
+
+header, footer {
+    text-align: center;
+    font-size: 2em; 
+}
+
+h1 {
+    font-family: "Carter One", serif;
+}
+
+nav {
+    height: auto;
+    background-color: #8174A0;
+}
+
+nav ul {
+    text-align: center;
+    padding: 0;
+}
+
+nav ul li {
+    width: 10%;
+    min-width: 100px;
+    height: 50px;
+    background-color: #441752;
+    display: inline-block;
+    margin: 10px;
+}
+
+ul li {
+    list-style-type: none;
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: red;
+}
+
+a:visited {
+    color: deeppink;
+}
+
+a:active {
+    color: blueviolet;
+}
+
+a:hover {
+    color: dodgerblue;
+}
+
+nav ul li:hover {
+    width: 12%;
+    background-color: blueviolet;
+}
+
+nav ul li a:hover {
+    color: bisque;
+}
+
+main {
+    height: auto;
+    background-color: #EFB6C8;
+    color: #8174A0;
+    padding: 10px;
+}
+
+footer {
+    font-size: 1.5em; 
+}
+
+section {
+    width: 70%;
+    height: auto;
+    background-color: #A888B5;
+    margin: 0 auto 30px;
+    padding: 20px;
+    color: #EFB6C8;
+}
+
+p {
+    margin-top: 20px;
+}
+
+h2 {
+    color: #441752;
+}
+
+img {
+    max-width: 100%; 
+    height: auto;
+    margin-top: 30px;
+    display: block;
+    padding-top:40px;
+}
+
+#img_gif {
+    width: 30%;
+    border-radius: 50%;
+}
+
+.img_float {
+    width: 80px;
+    min-width: 10%;
+}
+
+#img_izquierda {
+    float: left;
+    margin: 0 20px 0 0;
+}
+
+#img_derecha {
+    float: right;
+    margin: 0 0 0 20px;
+}
+
+#img_ico {
+    width: 64px;
+    height: auto;
+    margin-right: 0;
+}
+
+#fondo {
+    height: 800px;
+    background-image: url("../images/libros.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+video, iframe {
+    width: 100%;
+    margin: 30px auto;
+    display: block;
+}
+
+.box_videos {
+    text-align: center;
+}
+
+.box_videos section {
+    width: 40%;
+    min-width: 360px;
+    display: inline-block;
+    margin: 30px;
+    height: 750px;
+    overflow-y: auto;
+}
+
+.box_videos section p {
+    text-align: justify;
+}
+
+header h1 {
+    font-family: "Mali", cursive;
+    font-size: 2.5em; 
+}
+
+.img_animacion {
+    width: 30%;
+    border-radius: 50%;
+    margin: 30px auto;
+    display: block;
+}
+
+form {
+    width: 50%;
+    background-color: purple;
+    padding: 50px;
+    margin: 30px auto;
+    color: pink;
+    border-radius: 20px;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    display: block;
+    padding: 10px;
+    background-color: darkblue;
+    color: beige;
+    border: 3px solid pink;
+    border-radius: 10px;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: aliceblue;
+    color: sandybrown;
+    font-weight: bolder;
+    border: 5px solid red;
+}
+
+label {
+    font-weight: bolder;
+    margin: 10px 0;
+    display: block;
+}
+
+input[type=submit] {
+    width: 20%;
+    min-width: 100px;
+    margin: 20px auto;
+    display: block;
+    padding: 10px;
+    background-color: plum;
+    color: azure;
+    font-weight: bolder;
+    border-radius: 10px;
+}
+
+
+@media (max-width: 768px) {
+    header, footer {
+        font-size: 1.5em;
+    }
+
+    nav ul li {
+        width: 20%;
+        min-width: 80px;
+    }
+
+    section {
+        width: 90%;
+    }
+
+    .box_videos section {
+        width: 80%;
+        min-width: 280px;
+    }
+
+    form {
+        width: 80%;
+    }
+
+    input[type=submit] {
+        width: 30%;
+    }
+}
+
+@media (max-width: 480px) {
+    header, footer {
+        font-size: 1.2em;
+    }
+
+    nav ul li {
+        width: 30%;
+        min-width: 60px;
+    }
+
+    section {
+        width: 95%;
+    }
+
+    .box_videos section {
+        width: 90%;
+        min-width: 200px;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    input[type=submit] {
+        width: 40%;
+    }
+}
+
+#home-icon {
+    position: absolute; 
+    top: 91px; 
+    left: 20px; 
+    float: right;
+}
+
+
+#home-icon img {   width: 80px; 
+    height: auto;
+    }
+ 

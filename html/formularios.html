@@ -1,0 +1,220 @@
+<!--
+Facultad de Arquitectura
+Colegio de Diseño Gráfico
+Diseño de Interfaces Gráficas de Usuario
+Tepanecatl Hernández Joan Daniel
+Matrícula 202058947
+-->
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <title>Formularios en HTML</title>
+    <header>
+           <h1>Formularios</h1>
+           <a href="../index.html" id="home-icon">
+        <img src=  "../images/home.png" alt="index" width="80" height="80">
+    </a>
+       </header>
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+</head>
+<body>
+    <nav>
+        <ul>
+                  
+        <li><a href="../html/formatostexto.html">Formatos</a></li>
+        <li><a href="../html/listas.html">Listas</a></li>
+        <li><a href="../html/enlaces.html">Enlaces</a></li>
+        <li><a href="../html/Tablas.html">Tablas</a></li>
+        <li><a href="../html/imgenes.html">Imagenes</a></li>
+        <li><a href="../html/audio.html">Audio</a></li>
+         <li><a href="../html/video.html">Video</a></li>
+        <li><a href="../html/formularios.html">Formularios</a></li>
+        </ul>
+    </nav>
+    <main>
+        
+        <section>
+            <h2>Formularios</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium ex eu nibh placerat, sed aliquam ex pretium. Morbi justo dolor, lobortis eget aliquam bibendum, fermentum in urna. Donec quis urna pulvinar, viverra dui finibus, mollis ex. Phasellus eget euismod mauris. Etiam vel sapien dapibus, mattis lacus lobortis, aliquam tortor. Sed venenatis cursus viverra. Cras elementum molestie lorem, quis porttitor arcu suscipit accumsan. Aenean massa leo, lobortis vel massa id, laoreet egestas sapien.Nam vel tellus ex. Ut ac augue sit amet enim maximus maximus. Phasellus a lectus molestie, bibendum urna eu, ornare enim. Nunc laoreet diam vitae nulla volutpat.</p>
+            <form action="" method="get">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" value="Daniel">
+                <label for="contrasena">Contraseña</label>
+                <input type="password" id="contrasena" name="contrasena" value="123456">
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+
+     
+        <section>
+            <h2>Formulario Avanzado</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium ex eu nibh placerat, sed aliquam ex pretium. Morbi justo dolor, lobortis eget aliquam bibendum, fermentum in urna. Donec quis urna pulvinar, viverra dui finibus, mollis ex. Phasellus eget euismod mauris. Etiam vel sapien dapibus, mattis lacus lobortis, aliquam tortor. Sed venenatis cursus viverra. Cras elementum molestie lorem, quis porttitor arcu suscipit accumsan. Aenean massa leo, lobortis vel massa id, laoreet egestas sapien.Nam vel tellus ex. Ut ac augue sit amet enim maximus maximus. Phasellus a lectus molestie, bibendum urna eu, ornare enim. Nunc laoreet diam vitae nulla volutpat.</p>
+            <form action="" method="get">
+        
+                <label for="color">1. Selecciona tu color favorito:</label>
+                <input type="color" id="color" name="color">
+                <br><br>
+
+               
+                <label for="telefono">2. Ingresa tu número de teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Ej: 555-123-4567">
+                <br><br>
+
+          
+                <label for="archivo">3. Sube un archivo:</label>
+                <input type="file" id="archivo" name="archivo">
+                <br><br>
+
+                <label for="fecha">4. Selecciona tu fecha de nacimiento:</label>
+                <input type="date" id="fecha" name="fecha">
+                <br><br>
+
+                <label for="email">5. Ingresa tu correo electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="Ej: usuario@dominio.com">
+                <br><br>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+
+        
+        <section>
+            <h2>Formularios</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ullamcorper eros vitae ligula malesuada tempus. Ut non enim eros. Curabitur quis laoreet ipsum. Vestibulum viverra faucibus sodales. Interdum et malesuada fames ac ante ipsum primis in faucibus. In blandit metus condimentum, fringilla massa eu, tincidunt mi. Nullam vitae est ex. Vivamus quis convallis sapien. Phasellus tortor velit, elementum vel turpis molestie, viverra fringilla ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In et imperdiet nunc. Integer lorem lorem, efficitur in vestibulum sed, efficitur at metus. Nunc faucibus tincidunt urna sed convallis. Suspendisse in est id.</p>
+            
+      <form action="" method="get">
+    <label for="name-1">Nombre</label>
+    <input type="text" id="name-1" name="name-1" value="">
+
+    <label for="pais">País</label>
+    <select id="pais" name="pais">
+        <option value="ar">Argentina</option>
+        <option value="co">Colombia</option>
+        <option value="us">Estados Unidos</option>
+        <option value="mx">México</option>
+        <option value="it">Italia</option>
+        <option value="es">España</option>
+    </select>
+
+         <label for="genero">Genero</label> 
+          
+        <input type="radio" id="femenino" name="genero" value="femenino">
+        <label for="femenino">femenino</label>
+          <input type="radio" id="mas" name="genero" value="masculino">
+          <label for="masculino">masculino</label>
+          
+          <label for="music">¿cual es tu genero musical favorito?</label>
+          <input type="checkbox" id="music-1" value="pop">
+           <label for="music-1">pop</label>
+          <input type="checkbox" id="music-2" name="music-2"value="rock">
+          <label for="music-2">rock</label>
+          <input type="checkbox" id="music-3" value="jazz-blues">
+           <label for="music-3">jazz-blues</label>    
+          
+                 
+          
+          
+          
+          
+          
+          
+          
+          
+          
+    <input type="submit" value="Enviar">
+</form>
+                
+                
+                
+                
+        </section>
+            
+       
+<section>
+    <h2>Formulario de Registro de Usuario</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ullamcorper eros vitae ligula malesuada tempus. Ut non enim eros. Curabitur quis laoreet ipsum. Vestibulum viverra faucibus sodales. Interdum et malesuada fames ac ante ipsum primis in faucibus. In blandit metus condimentum, fringilla massa eu, tincidunt mi. Nullam vitae est ex. Vivamus quis convallis sapien. Phasellus tortor velit, elementum vel turpis molestie, viverra fringilla ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In et imperdiet nunc. Integer lorem lorem, efficitur in vestibulum sed, efficitur at metus. Nunc faucibus tincidunt urna sed convallis. Suspendisse in est id.</p>
+    <form action="" method="get">
+      
+        <label for="nombre-completo">Nombre completo:</label>
+        <input type="text" id="nombre-completo" name="nombre-completo" placeholder="Ej: Juan Pérez">
+        <br><br>
+
+      
+        <label for="email-registro">Correo electrónico:</label>
+        <input type="email" id="email-registro" name="email-registro" placeholder="Ej: usuario@dominio.com">
+        <br><br>
+
+       
+        <label for="contrasena-registro">Contraseña:</label>
+        <input type="password" id="contrasena-registro" name="contrasena-registro" placeholder="Mínimo 8 caracteres">
+        <br><br>
+
+   
+        <label for="genero-registro">Género:</label>
+        <input type="radio" id="femenino-registro" name="genero-registro" value="femenino">
+        <label for="femenino-registro">Femenino</label>
+        <input type="radio" id="masculino-registro" name="genero-registro" value="masculino">
+        <label for="masculino-registro">Masculino</label>
+        <input type="radio" id="otro-registro" name="genero-registro" value="otro">
+        <label for="otro-registro">Otro</label>
+        <br><br>
+
+  
+        <label for="intereses">Intereses:</label>
+        <input type="checkbox" id="deportes" name="intereses" value="deportes">
+        <label for="deportes">Deportes</label>
+        <input type="checkbox" id="musica" name="intereses" value="musica">
+        <label for="musica">Música</label>
+        <input type="checkbox" id="tecnologia" name="intereses" value="tecnologia">
+        <label for="tecnologia">Tecnología</label>
+        <br><br>
+
+        
+        <input type="submit" value="Registrarse">
+    </form>
+</section>
+       <section>
+    <h2>Formulario de Contacto</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ullamcorper eros vitae ligula malesuada tempus. Ut non enim eros. Curabitur quis laoreet ipsum. Vestibulum viverra faucibus sodales. Interdum et malesuada fames ac ante ipsum primis in faucibus. In blandit metus condimentum, fringilla massa eu, tincidunt mi. Nullam vitae est ex. Vivamus quis convallis sapien. Phasellus tortor velit, elementum vel turpis molestie, viverra fringilla ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In et imperdiet nunc. Integer lorem lorem, efficitur in vestibulum sed, efficitur at metus. Nunc faucibus tincidunt urna sed convallis. Suspendisse in est id.</p>
+    <form action="" method="get">
+     
+        <label for="nombre-contacto">Nombre:</label>
+        <input type="text" id="nombre-contacto" name="nombre-contacto" placeholder="Ej: María López">
+        <br><br>
+
+        
+        <label for="email-contacto">Correo electrónico:</label>
+        <input type="email" id="email-contacto" name="email-contacto" placeholder="Ej: usuario@dominio.com">
+        <br><br>
+
+      
+        <label for="asunto">Asunto:</label>
+        <input type="text" id="asunto" name="asunto" placeholder="Ej: Consulta sobre servicios">
+        <br><br>
+
+      
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí"></textarea>
+        <br><br>
+
+   
+        <label for="preferencia-contacto">Preferencia de contacto:</label>
+        <select id="preferencia-contacto" name="preferencia-contacto">
+            <option value="email">Correo electrónico</option>
+            <option value="telefono">Teléfono</option>
+            <option value="whatsapp">WhatsApp</option>
+        </select>
+        <br><br>
+
+        
+        <input type="submit" value="Enviar mensaje">
+    </form>
+</section>
+    </main>
+
+    <footer>
+        <h6>Elaborado por Tepanecatl Hernandez Joan Daniel</h6>
+    </footer>
+</body>
+</html>
